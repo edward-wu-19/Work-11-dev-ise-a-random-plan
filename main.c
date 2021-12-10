@@ -25,7 +25,7 @@ int main() {
     }
 
     printf("\nWriting numbers to file...\n");
-    int goo = open("./something", O_RDWR | O_CREAT, 0003);
+    int goo = open("./something", O_RDWR | O_CREAT, 0644);
     int gr = write(goo, arr, sizeof(arr));
 
     printf("\nReading numbers from file...\n");
